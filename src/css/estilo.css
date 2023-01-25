@@ -1,0 +1,94 @@
+body{
+    font-family: "poppins";  /*apliquei a font que baixei */
+}
+
+.cabecalho{
+  
+    display: flex;  /*colocar um ao lado do outro*/
+    justify-content: space-between;  /*dividir o espaço entre elas*/
+    padding: 30px;/*vai dar um espaçamento no conteudo em todas as bordas*/
+    max-width: 1440px; /*O cabeçalho vai ter uma largura maxima*/
+    margin:0 auto/*centralizar*/
+    
+} 
+
+.cabecalho .logo{
+    width: 80px;/*diminuir o tamanho da logo*/
+  
+
+}
+.cabecalho .menu{
+    
+    display: flex;
+    height: 100%;
+    align-items: center;
+    
+}
+.cabecalho nav li a {
+   font-weight: bold; /* peso da font "negrito"*/
+   color: #ffffff;
+   padding: 10px 20px;/*espaçamento entre eles  no topo e os lados*/
+   border-radius: 50px;/*deixa as bordas dos itens arredondada*/
+   transition: 0.3s;/*tempo de transição*/
+}
+
+.cabecalho nav li a:hover { 
+    background-color: #d5011d;/*quando passar o mause em cima vai ativar a cor */
+  
+
+}
+.container{
+   
+    max-width: 1440px ;
+    margin: 0 auto;
+    display: flex;
+    height: calc(100vh - 146.4);/*tirei o valor do menu do cantainer, tirei a barra de rolagem*/
+    padding: 0 30px 30px;
+
+}
+.container .imagem-titulo{
+    max-width: 500px;
+}
+.container .descricao{
+    color: #a8adb7;
+    font-size: 19px;/*aumentar a fonte*/
+    margin: 30px 0;/*em cima e embaixo 30 de espaçamento e dos lados 0*/
+}
+.container .butao{
+    background-color: #d5011d;
+    color: #ffffff;/*cor do texto*/
+    padding: 15px; /*espaçamento do conteudo para a borda*/
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;/*quando passar o mause em cima vira uma mãozinha*/
+    border: none;/*tirar a bordar*/
+    text-transform: uppercase; /*letras todas maiusculas*/
+    transition: 0.5s all ease-in-out;/*coloca no elemento que vai ter*/
+}
+.container .butao:hover{
+    transform: scale(1.1);/*aumanta quando o mause passar*/
+}
+.fundo-video {
+    background-color: #d5011d;
+    position: absolute;/*colocar tipo vuando em cima tipo outra*/
+    z-index: -1;/*colocar no eixo z , joga esse video la pra tras*/
+    width: 100vw;/*ocupa a largura toda*/
+    height: 100vh;/*ocupa a altura toda*/
+    overflow: hidden;/*esconder o tranbordamento*/
+
+}
+.fundo-video .video{
+    height: 100vh;
+}    
+.fundo-video::after{
+    content:"";
+   
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,0.8034188034188035) 50%, rgba(0,0,0,1) 100%);
+}

@@ -1,0 +1,16 @@
+/*resetando o site para não ter bugs*/
+
+* {
+    margin: 0;/*zera as margens do conteudo*/
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;/*tira todos os estilos das listas*/
+}
+
+a{
+    text-decoration: none;/*sem nenhuma decoração no links para eles não ficarem azuis*/
+}
+

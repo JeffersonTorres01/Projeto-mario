@@ -1,0 +1,40 @@
+@media (max-width: 1200px) /*responsivando para uma tela de 1200px para baixo "mobile"*/{
+    body {
+        background-color: blue;
+    }
+    .container{
+        flex-wrap:  wrap;/*não tem espaço na tela joga os elementos para baixo, do outro*/
+        justify-content: center;/*colocar o container no cetro*/
+        height: auto;/*altura do menu automatica*/
+        gap: 30px;/*espaçamento entre eles*/
+    }
+    .fundo-video{
+        display: none;/*para telas menores que 1200px, o video de fundo vai sumir*/
+    }
+    .container .mario{
+        max-width: 300px;/*a tela ira diminuir*/
+        
+    }
+    .container .informacoes {
+        display: flex;
+        align-items: center;/*alinhar os itens*/
+        flex-direction: column;
+    }
+    .container .descricao {
+        color: #ffffff;
+        text-align: center;
+    }
+    .container .butao{
+        background-color: #263238;/*o butão muda a cor*/
+    }
+}
+@media (max-width: 500px){
+    .cabecalho {
+        flex-wrap: wrap;/*jogar o cabeçalho para baixo*/
+        justify-content: center;
+        gap: 10px;/*espaçamento entre eles*/
+    }
+    .container .imagem-titulo{
+        max-width: 75%;/*a imagem ira diminuir*/
+    }
+}
